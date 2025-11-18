@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:jual_bola_dll/screens/menu.dart';
 import 'package:jual_bola_dll/screens/shoplist_form.dart'; 
+import 'package:jual_bola_dll/screens/list_product.dart'; 
 
 class LeftDrawer extends StatelessWidget {
   const LeftDrawer({super.key});
@@ -60,6 +61,16 @@ class LeftDrawer extends StatelessWidget {
                   builder: (context) => const ShopFormPage(),
                 ),
               );
+            },
+          ),
+          ListTile(
+            leading: const Icon(Icons.shopping_bag),
+            title: const Text('Daftar Produk'),
+            onTap: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => const ProductPage()),
+                );
             },
           ),
         ],
