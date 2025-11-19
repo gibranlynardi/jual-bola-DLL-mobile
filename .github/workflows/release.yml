@@ -11,7 +11,7 @@ on:
 permissions:
   contents: write
 
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel test
 jobs:
   # This workflow contains a single job called "Build and Release APK"
   releases:
